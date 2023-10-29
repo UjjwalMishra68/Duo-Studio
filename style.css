@@ -1,0 +1,398 @@
+@font-face {
+    font-family: head;
+    src: url(./ppmori-regular.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    background-color: #0F0D0D;
+    font-family: head;
+    color: white,
+}
+
+.page1 {
+    min-height: 100vh;
+    width: 100vw;
+    color: white;
+    overflow-x: hidden;
+}
+
+i {
+    display: none;
+}
+
+.navbar {
+    height: 80px;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+.logo .h1 {
+    width: 4vw;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li h4 {
+    font-weight: 400;
+
+}
+
+.navbar ul li:nth-child(1) {
+    border-bottom: 2px solid white;
+}
+
+.right {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.page1Content_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 23vh;
+    position: relative;
+}
+
+.page1Content_container h1,
+h2 {
+    font-size: 7vw;
+    font-weight: 550;
+    letter-spacing: -1px;
+    word-spacing: -5px;
+}
+
+.page1Content_container h4 {
+    font-size: 1.2vw;
+    width: 33%;
+    text-align: center;
+    margin-top: 30px;
+    line-height: 3.5vh;
+    font-weight: 100;
+}
+
+.page2 {
+    min-height: 130vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    column-gap: 6vw;
+    border-bottom: 2px solid #dadada;
+}
+
+.page2_left {
+    height: 100%;
+    padding-left: 80px;
+    margin-top: 100px;
+}
+
+.page2_left .page2_heading {
+    text-align: start;
+    text-align: start;
+    margin-top: -20px;
+}
+
+.page2_left .page2_heading h1 {
+    font-size: 2.7vw;
+    width: 133%;
+    font-weight: 550;
+}
+
+.page2content_container {
+    transform: translateY(28vh);
+}
+
+.page2content .rows {
+    border-top: 1px solid black;
+}
+
+.page2content .rows3 {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.page2content .rows h2,
+.rows3 h2 {
+    font-size: 1.7vw;
+    font-weight: 300;
+    margin-bottom: 6px;
+}
+
+.page2content .rows p,
+.rows3 p {
+    font-weight: 50;
+    font-size: clamp(15px, .84167vw, 16px);
+    letter-spacing: 0.5px;
+}
+
+.colums {
+    margin: 20px 0px;
+}
+
+.page2content_container .page2content button {
+    padding: 8px 20px;
+    background-color: #CCA5DB;
+    border-radius: 30px;
+    border: 2px solid #CCA5DB;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.page2_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(2vh);
+}
+
+.page2_right img {
+    width: 50vw;
+
+}
+
+.page3 {
+    min-height: 350vh;
+    position: relative;
+}
+
+.page3content_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.page3_left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.page3_leftheading {
+    margin-left: 10%;
+    transform: translateY(60%);
+}
+
+.page3_leftheading h1 {
+    font-size: 8vw;
+    font-weight: 300;
+    letter-spacing: -5px;
+    width: 50%;
+}
+
+.page3_leftSecond {
+    width: 40%;
+    overflow: hidden;
+}
+
+.page3_leftSecond video {
+    height: 82vh;
+}
+
+.page3_leftFirst {
+    margin-top: calc(100% - 70%);
+    padding: 0 170px
+}
+
+.page3_right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 170px
+}
+
+.page3 img {
+    height: 85vh;
+    width: 30vw;
+}
+
+.page3_rightFirst {
+    width: 40%;
+    overflow: hidden;
+    margin-top: calc(100% - 70%);
+}
+
+.page3 h3 {
+    font-size: 1.7vw;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.page3 p {
+    font-size: 1vw;
+}
+
+.page4 {
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+
+}
+
+.page4_part1 {
+    height: 50%;
+    display: flex;
+    gap: 10%;
+    align-items: center;
+}
+
+.page4_content {
+    padding: 0px 175px;
+}
+
+.page4_part1 h1 {
+    font-size: 6vw;
+    font-weight: 600;
+    text-align: start;
+}
+
+.page4_circle {
+    height: 140px;
+    width: 145px;
+    background-color: #CCA5DB;
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page4_part2 {
+    position: relative;
+    width: 100vw;
+    height: 50%;
+    display: flex;
+}
+
+.scrollContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.scroller {
+    min-width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10vh 0vw;
+}
+
+.scroller h1 {
+    font-size: 2vw;
+    font-weight: 600;
+    letter-spacing: -1px;
+    word-spacing: -1px;
+}
+
+.scrollerp  {
+    width: 65%;
+    text-align: center;
+    font-size: 1vw;
+    word-spacing: -2px;
+}
+
+.page5 {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #CCA5DB;
+}
+
+.page5Container {
+    padding: 0px 180px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.page5_part1 {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    height: 50%;
+    width: 100%;
+    align-items: center;
+}
+
+.page5_circle {
+    height: 130px;
+    width: 130px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.page5_part2 {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page5_form input {
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: transparent;
+    width: 30vw;
+}
+
+.page5_form button {
+    border-radius: 40px;
+    padding: 2px 10px;
+    background: transparent;
+    cursor: pointer;
+    margin-left: -68px;
+    transform: translateY(-5px);
+}
+
+.page5_form button p {
+    font-size: 0.6vw;
+}
+
+.page5_part2 h3 {
+    font-size: 1.4vw;
+}
+
+.form_heading {
+    margin: 50px 0px;
+}
+
+.note {
+    padding-top: 10%;
+    width: 50%;
+    font-size: 0.9vw;
+}
